@@ -19,11 +19,5 @@
   "homepage": "https://github.com/hao44le/test-cd#readme",
   "devDependencies": {
     "semantic-release": "^15.6.2"
-  },
-  "release": {
-    "analyzeCommits": "simple-commit-message"
-  },
-  "dependencies": {
-    "simple-commit-message": "^4.0.3"
   }
 }
