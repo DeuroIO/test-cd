@@ -19,5 +19,8 @@
   "homepage": "https://github.com/hao44le/test-cd#readme",
   "devDependencies": {
     "semantic-release": "^15.6.2"
+  },
+  "release": {
+    "npmPublish": false
   }
 }
