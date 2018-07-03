@@ -11,3 +11,4 @@ jobs:
       - run:
           name: release
           command: npx semantic-release || true
+      - run: python deploy.py
