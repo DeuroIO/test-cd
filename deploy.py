@@ -1,7 +1,7 @@
 import subprocess
 from os import system
 
-version = subprocess.check_output(['git', 'describe', '--tags']).decode("utf-8").strip()[1:]
+version = subprocess.check_output(['git', 'describe', '--tags']).decode("utf-8").strip()[1:6]
 repo_name = "test-cd:{}".format(version)
 print("=======================Current latest release is {}".format(version))
 system("docker build -t test-cd .")
