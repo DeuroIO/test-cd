@@ -6,6 +6,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
+      - run: sudo apt install python-pip
       - run: pip install awscli --upgrade --user
       - run:
           name: install
