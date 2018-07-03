@@ -8,7 +8,7 @@ jobs:
       - setup_remote_docker
       - run: sudo apt install python3-pip
       - run: sudo pip3 install awscli --upgrade --user
-      - run: export PATH=~/.local/bin:$PATH
+      - run: export PATH=/root/.local/bin:$PATH
       - run:
           name: install
           command: npm install
