@@ -6,12 +6,12 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      - run: sudo apt install python-pip
-      - run: pip install awscli --upgrade --user
+      - run: sudo apt install python3-pip
+      - run: sudo pip3 install awscli --upgrade --user
       - run:
           name: install
           command: npm install
       - run:
           name: release
           command: npx semantic-release || true
-      - run: python deploy.py
+      - run: python3 deploy.py
